@@ -1,0 +1,145 @@
+## Technical Specification for the Development of a One‑Page Resume Website (Business Card) for a System Administrator / DevOps Engineer
+
+### 1. General Information
+
+**1.1. Project Objective**  
+To create a concise, strictly official one‑page website‑business card serving as an electronic resume for a specialist in system administration and DevOps. The website must convey a professional impression, ensure convenient navigation and readability, and allow quick assessment of the candidate’s qualifications.
+
+**1.2. Target Audience**  
+* recruiters and HR specialists;  
+* technical leads and team leaders;  
+* potential clients (for freelancing/consulting).
+
+**1.3. Platform**  
+A static one‑page website based on HTML and JavaScript (no backend, CMS, or frameworks).
+
+### 2. Functional Requirements
+
+**Mandatory Features:**  
+* smooth navigation between sections via anchor links;  
+* responsive design (mobile devices, tablets, desktops);  
+* “Download Resume” button (link to a PDF file);  
+* contact form (name, email, message) with basic JS validation;  
+* display of the current year in the footer (dynamically via JS);  
+* highlighting of the active section in the navigation menu during scrolling.
+
+**Optional Features (by agreement):**  
+* one‑click email copying;  
+* minimal block appearance animations during scrolling (without overloading).
+
+### 3. Structure and Content
+
+The website must include the following sections (in order):
+
+1. **Header**  
+   * candidate’s first and last name;  
+   * brief position: “System Administrator / DevOps Engineer”;  
+   * navigation menu with section anchors.
+
+2. **About Me**  
+   * short professional profile (3–5 sentences);  
+   * key competencies (list of 6–10 items: e.g., Linux, Docker, Kubernetes, Ansible, CI/CD, monitoring, etc.).
+
+3. **Experience**  
+   * chronological list of workplaces (from latest to earliest);  
+   * for each workplace: company name, position, period of employment, brief description of responsibilities and achievements (2–3 points).
+
+4. **Education**  
+   * educational institution, specialty, year of graduation;  
+   * additional courses, certifications (if any).
+
+5. **Skills**  
+   * detailed list of technical skills with proficiency levels (e.g., “Advanced”, “Intermediate”, “Basic”);  
+   * categorized by: OS, networking, virtualization, orchestration, CI/CD, scripting, etc.
+
+6. **Projects**  
+   * 2–3 key projects with descriptions: goal, candidate’s role, technologies used, outcome;  
+   * links to public repositories (GitHub/GitLab) — if available.
+
+7. **Certifications and Training**  
+   * list of obtained certifications (name, organization, year);  
+   * verification links (if available).
+
+8. **Contact**  
+   * contact form (name, email, message);  
+   * direct contacts: email, phone, LinkedIn, GitHub (links with icons).
+
+9. **Footer**  
+   * copyright with the current year;  
+   * link to download the resume in PDF format.
+
+### 4. Design and Style
+
+**4.1. Color Scheme**  
+* primary color: shades of blue (e.g., `#0077b6`, `#48cae4`);  
+* secondary color: white (`#ffffff`) or light gray (`#f8f9fa`);  
+* accent color: dark blue or black for text;  
+* contrast: WCAG AA compliance (text readability).
+
+**4.2. Typography**  
+* font: sans‑serif (e.g., Roboto, Open Sans, Helvetica);  
+* headings: larger, bolder;  
+* body text: 16–18px, line height 1.5;  
+* text color: dark gray (`#212529`) or black.
+
+**4.3. Layout**  
+* content width: no more than 1200px with margins;  
+* margins: uniform, 40–60px between sections;  
+* alignment: centered.
+
+**4.4. Icons**  
+* use SVG icons (e.g., from Bootstrap Icons or Feather Icons) for contacts, skills, etc.
+
+### 5. Technical Requirements
+
+**5.1. Technologies**  
+* HTML5;  
+* CSS3 (no preprocessors);  
+* JavaScript (vanilla, no libraries).
+
+**5.2. Responsiveness**  
+* mobile devices (320–767px): vertical layout, simplified menu;  
+* tablets (768–1023px): compact grid;  
+* desktops (1024+ px): full width with margins.
+
+**5.3. Performance**  
+* page load time: no more than 2 seconds (on slow connections);  
+* image optimization (compression, SVG for icons);  
+* CSS/JS minimization (if possible).
+
+**5.4. Cross‑Browser Compatibility**  
+* support for the latest versions of Chrome, Firefox, Safari, Edge.
+
+**5.5. Accessibility**  
+* semantic markup (header, nav, section, footer);  
+* `alt` attributes for images;  
+* keyboard navigation;  
+* text contrast.
+
+### 6. Content Requirements
+
+* All text blocks are provided by the client in DOC/PDF format.  
+* Images (photos, logos) are provided in PNG/JPEG/SVG format.  
+* PDF version of the resume is provided by the client.
+
+### 7. Development Stages
+
+1. **Analysis and Design**  
+   * согласование структуры и дизайна;  
+   * preparation of mockups (optional).
+
+2. **Markup and Programming**  
+   * creation of HTML markup;  
+   * styling with CSS;  
+   * implementation of JS functionality.
+
+3. **Testing**  
+   * responsiveness check;  
+   * cross‑browser testing;  
+   * accessibility check.
+
+4. **Refinement and Delivery**  
+   * addressing feedback;  
+   * final check;  
+   * delivery of source files.
+

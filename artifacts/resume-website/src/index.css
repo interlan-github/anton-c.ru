@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-card-border: hsl(var(--card-border));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-popover-border: hsl(var(--popover-border));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Outfit', sans-serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+}
+
+:root {
+  /* Requested Color Scheme: 
+     Primary #0077b6 (200, 100%, 36%)
+     Secondary #48cae4 (190, 73%, 59%)
+     White #ffffff (0, 0%, 100%)
+     Light Gray #f8f9fa (210, 17%, 98%)
+     Dark Text #212529 (210, 11%, 15%)
+     Accent Dark Blue #03045e (239, 94%, 19%)
+  */
+  
+  --background: 210 17% 98%;
+  --foreground: 210 11% 15%;
+  
+  --card: 0 0% 100%;
+  --card-foreground: 210 11% 15%;
+  --card-border: 210 20% 94%;
+  
+  --popover: 0 0% 100%;
+  --popover-foreground: 210 11% 15%;
+  --popover-border: 210 20% 94%;
+  
+  --primary: 200 100% 36%;
+  --primary-foreground: 0 0% 100%;
+  
+  --secondary: 190 73% 59%;
+  --secondary-foreground: 239 94% 19%;
+  
+  --muted: 210 20% 94%;
+  --muted-foreground: 210 11% 40%;
+  
+  --accent: 239 94% 19%;
+  --accent-foreground: 0 0% 100%;
+  
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  
+  --border: 210 20% 90%;
+  --input: 210 20% 90%;
+  --ring: 200 100% 36%;
+  
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: 239 94% 8%;
+  --foreground: 210 17% 98%;
+  
+  --card: 239 94% 12%;
+  --card-foreground: 210 17% 98%;
+  --card-border: 239 50% 20%;
+  
+  --popover: 239 94% 12%;
+  --popover-foreground: 210 17% 98%;
+  --popover-border: 239 50% 20%;
+  
+  --primary: 190 73% 59%;
+  --primary-foreground: 239 94% 12%;
+  
+  --secondary: 200 100% 36%;
+  --secondary-foreground: 0 0% 100%;
+  
+  --muted: 239 50% 15%;
+  --muted-foreground: 210 11% 70%;
+  
+  --accent: 200 100% 36%;
+  --accent-foreground: 0 0% 100%;
+  
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 0 0% 100%;
+  
+  --border: 239 50% 20%;
+  --input: 239 50% 20%;
+  --ring: 190 73% 59%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight text-accent;
+  }
+  
+  .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    @apply text-foreground;
+  }
+}
+
+/* Custom scrollbar for a polished look */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary) / 0.8);
+}

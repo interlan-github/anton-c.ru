@@ -1,0 +1,16 @@
+packages:
+  "framer-motion": "For premium scroll reveal animations and smooth transitions"
+  "react-hook-form": "For robust contact form state management"
+  "@hookform/resolvers": "For Zod validation integration with react-hook-form"
+  "zod": "For contact form schema validation"
+  "clsx": "For conditional class merging"
+  "tailwind-merge": "For conditional class merging without conflicts"
+
+images:
+  - path: "artifacts/resume-website/public/images/hero-bg.png"
+    description: "Abstract minimal tech background with deep blue and cyan gradients, subtle geometric network patterns, corporate professional"
+    aspect_ratio: "16:9"
+
+notes:
+  - Single page static application
+  - Form submissions are simulated (no backend required)
