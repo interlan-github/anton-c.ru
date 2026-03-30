@@ -1,0 +1,17 @@
+packages:
+  "framer-motion": "For smooth scroll-triggered animations and UI micro-interactions"
+  "react-hook-form": "For robust contact form state management"
+  "@hookform/resolvers": "For Zod validation integration with react-hook-form"
+  "clsx": "Utility for conditionally joining classNames"
+  "tailwind-merge": "Utility for merging tailwind classes without style conflicts"
+
+images:
+  - path: "artifacts/resume-site/public/images/profile-avatar.png"
+    description: "A clean, modern, professional flat-vector illustration of a male systems administrator or devops engineer in smart-casual attire, smiling slightly, set against a solid subtle blue circular background."
+    aspect_ratio: "1:1"
+
+notes:
+  - No backend required for this static single-page resume site.
+  - Contact form submits are simulated and show a toast notification on success.
+  - Using framer-motion for intersection-based reveals.
+  - Standard HTML anchor links used for section navigation, bypassing wouter for hash routing.
