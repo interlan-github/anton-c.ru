@@ -5,13 +5,13 @@ import { Menu, X, Download } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navItems = [
-  { name: "About", id: "about" },
-  { name: "Experience", id: "experience" },
-  { name: "Education", id: "education" },
-  { name: "Skills", id: "skills" },
-  { name: "Projects", id: "projects" },
-  { name: "Certifications", id: "certifications" },
-  { name: "Contact", id: "contact" },
+  { name: "О себе", id: "about" },
+  { name: "Опыт работы", id: "experience" },
+  { name: "Образование", id: "education" },
+  { name: "Навыки", id: "skills" },
+  { name: "Проекты", id: "projects" },
+  { name: "Сертификаты", id: "certifications" },
+  { name: "Контакты", id: "contact" },
 ];
 
 export function Navbar() {
@@ -72,7 +72,7 @@ export function Navbar() {
               className="ml-4 px-4 py-2 text-sm font-semibold rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all duration-200 flex items-center gap-2 shadow-sm"
             >
               <Download className="w-4 h-4" />
-              Resume
+              Резюме
             </a>
           </nav>
 

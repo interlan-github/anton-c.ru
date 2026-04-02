@@ -1,16 +1,17 @@
 export const personalInfo = {
-  name: "Alex Sokolov",
-  title: "System Administrator / DevOps Engineer",
-  email: "alex.sokolov@example.com",
-  phone: "+1 (555) 123-4567",
-  linkedin: "https://linkedin.com/in/alex-sokolov",
-  github: "https://github.com/alex-sokolov",
-  location: "New York, NY",
-  bio: "Experienced in designing, deploying, and maintaining enterprise infrastructure with 7+ years of hands-on experience in Linux administration, cloud platforms, and DevOps automation. Passionate about building robust, scalable systems and optimizing CI/CD pipelines to empower development teams.",
+  name: "Черноусов Антон",
+  title: "Системный администратор / DevOps-инженер",
+  email: "chernousov@interlan.xyz",
+  phone: "+7-996-694-1252",
+  linkedin: "https://www.linkedin.com/in/chernousov/",
+  github: "https://github.com/interlan-github",
+  location: "Россия, Новосибирск",
+  bio: "За последние 20 лет я успешно реализовывал сложные ИТ‑проекты в разных компаниях, более 15-и лет опыт в проектировании, развертывании и обслуживании корпоративной инфраструктуры, более 10 лет практического опыта в администрировании Linux, облачных платформах и автоматизации DevOps. Занимаюсь созданием надежных, масштабируемых систем и оптимизацией конвейеров CI/CD для расширения возможностей команд разработчиков.",
   competencies: [
     "Linux", "Docker", "Kubernetes", "Ansible", "Terraform", 
-    "CI/CD", "AWS", "Git", "Monitoring", "Scripting", 
-    "Networking", "Security"
+    "CI/CD", "Cloud", "Git", "Monitoring", "Scripting", 
+    "Networking", "Security", "Virtualization", "Web",
+    "Python", "Shell scripting"
   ]
 };
 

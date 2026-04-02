@@ -3,22 +3,22 @@ import { personalInfo } from "@/lib/data";
 
 export function About() {
   return (
-    <SectionLayout id="about" title="About Me" subtitle="Professional background and key competencies.">
+    <SectionLayout id="about" title="О себе" subtitle="Профессиональный опыт и ключевые компетенции.">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
         
         <div className="lg:col-span-2">
           <div className="prose prose-lg text-muted-foreground prose-p:leading-relaxed max-w-none">
             <p className="text-lg text-foreground font-medium mb-4">
-              I am a dedicated {personalInfo.title} with a passion for designing resilient, highly-available systems.
+              Я — преданный своему делу специалист в области проектирования отказоустойчивых и высокодоступных систем.
             </p>
             <p>
               {personalInfo.bio}
             </p>
             <p>
-              Throughout my career, I've bridged the gap between development and operations. By leveraging infrastructure as code and implementing robust CI/CD practices, I help teams ship code faster, safer, and with more confidence. I believe in the power of automation to eliminate manual toil, allowing engineering teams to focus on solving real business problems.
+              На протяжении всей своей карьеры я успешно совмещал разработку и эксплуатацию. Используя концепцию «инфраструктура как код» и внедряя надежные методы CI/CD, я помогаю командам выпускать код быстрее, безопаснее и увереннее. Я верю в силу автоматизации, способной устранить ручную работу, позволяя инженерным командам сосредоточиться на решении реальных бизнес-задач.
             </p>
             <p>
-              When I'm not configuring clusters or writing automation scripts, I enjoy exploring new cloud-native technologies, contributing to open-source tools, and sharing knowledge with the community.
+              В свободное от настройки кластеров и написания скриптов автоматизации время я с удовольствием изучаю новые облачные технологии, вношу вклад в разработку инструментов с открытым исходным кодом и делюсь знаниями с сообществом.
             </p>
           </div>
         </div>

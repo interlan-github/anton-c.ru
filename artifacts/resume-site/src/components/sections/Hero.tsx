@@ -29,7 +29,7 @@ export function Hero() {
             </div>
             
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-display font-extrabold text-foreground tracking-tight leading-tight">
-              Hi, I'm <br className="hidden sm:block"/>
+              Привет, меня зовут <br className="hidden sm:block"/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
                 {personalInfo.name}
               </span>
@@ -40,7 +40,7 @@ export function Hero() {
             </p>
             
             <p className="mt-4 text-base md:text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Building robust infrastructure, automating pipelines, and scaling systems for the modern web.
+              Создание надежной инфраструктуры, автоматизация и масштабирование систем для современного бизнеса и интернета.
             </p>
             
             <div className="mt-10 flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
@@ -48,14 +48,14 @@ export function Hero() {
                 href="#projects"
                 className="w-full sm:w-auto px-8 py-3.5 rounded-xl font-semibold bg-primary text-white shadow-lg shadow-primary/25 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200 text-center"
               >
-                View My Work
+                Мои свежие проекты
               </a>
               <a 
                 href="#contact"
                 className="w-full sm:w-auto px-8 py-3.5 rounded-xl font-semibold bg-white border-2 border-border text-foreground hover:border-primary/30 hover:bg-primary/5 transition-all duration-200 text-center flex items-center justify-center gap-2"
               >
                 <Mail className="w-5 h-5" />
-                Contact Me
+                Контакты для связи
               </a>
             </div>
           </motion.div>
