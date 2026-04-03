@@ -4,7 +4,7 @@ import { Briefcase } from "lucide-react";
 
 export function Experience() {
   return (
-    <SectionLayout id="experience" title="Experience" subtitle="My professional journey." bgDark>
+    <SectionLayout id="experience" title="Опыт работы" subtitle="Мой профессиональный путь." bgDark>
       <div className="relative border-l-2 border-primary/20 ml-3 md:ml-6 py-2 space-y-12">
         {experienceData.map((exp, index) => (
           <div key={exp.id} className="relative pl-8 md:pl-12 group">

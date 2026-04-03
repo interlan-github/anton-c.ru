@@ -18,35 +18,41 @@ export const personalInfo = {
 export const experienceData = [
   {
     id: 1,
-    role: "Senior DevOps Engineer",
-    company: "TechCorp Inc.",
-    period: "2021–Present",
+    role: "Системный администратор",
+    company: "ООО \"МАРОП\"",
+    period: "2025–Настоящее время",
     description: [
-      "Managed Kubernetes clusters (50+ nodes) across multiple environments ensuring 99.99% availability.",
-      "Automated CI/CD pipelines using GitLab CI, reducing average deployment time by 60%.",
-      "Implemented full infrastructure-as-code strategy with Terraform and Ansible for standardized provisioning."
+      "Реализация проектов по импортозамещению ИТ‑инфраструктуры. Подготовка к переходу с решений Microsoft на отечественные программные продукты (в т. ч. RedOS) с сохранением функциональности и безопасности бизнес‑процессов;",
+      "Проведение аудита существующей ИТ‑инфраструктуры (аппаратные ресурсы, ПО, сетевые сервисы, политики безопасности);",
+      "Выявление узких мест, рисков и ограничений при миграции;",
+      "Разработка детального плана внедрения с учётом требований заказчика и особенностей целевой платформы (RedOS);",
+      "Подбор альтернативных российских решений для замены компонентов Microsoft (ОС, серверные сервисы, офисные приложения и т. д.);",
+      "Поэтапная миграция инфраструктуры с Microsoft-решений на отечественное ПО (включая RedOS);"
     ]
   },
   {
     id: 2,
-    role: "System Administrator",
-    company: "DataSoft Solutions",
-    period: "2018–2021",
+    role: "Системный инженер",
+    company: "ООО \"Финстарлаб\"",
+    period: "2020–2025",
     description: [
-      "Administered enterprise Linux servers (RHEL, Ubuntu) in a complex 200+ server environment.",
-      "Built and maintained comprehensive monitoring solutions using Prometheus, AlertManager, and Grafana.",
-      "Implemented and routinely tested automated backup and disaster recovery procedures."
+      "Разработал унифицированную платформу для запуска сервисов МФО в Docker Compose;",
+      "Перенёс инфраструктуру в облачные среды (Selectel, Google Cloud);.",
+      "Унифицировал пайплайны для сборки и публикации сервисов;",
+      "Внедрил единую систему конфигурации серверов на базе Ansible;"
     ]
   },
   {
     id: 3,
-    role: "Junior System Administrator",
-    company: "WebHost LLC",
-    period: "2016–2018",
+    role: "Ведущий системный администратор",
+    company: "ООО \"Продевелопмент\"",
+    period: "2017–2019",
     description: [
-      "Managed Apache/Nginx web servers and MySQL databases for highly-trafficked client sites.",
-      "Performed routine system maintenance, performance tuning, and critical security patching.",
-      "Provided tier-2 technical support resolving complex infrastructure and application issues."
+      "Поддержка работы высоко нагруженного проекта сервиса подбора и продажи автозапчастей, подготовка и выкладка в прод-стэйдж-тест \
+      новых релизов. Поддержка команд разработчиков и тестирования,\
+      администрирование офисной серверной инфраструктуры;",
+      "Настройка мониторинга серверов при помощи Zabbix, разработка нестандартных метрик и триггеров;",
+      "Администрирование фермы виртуализации для разработчиков (кластер Proxmox);"
     ]
   }
 ];

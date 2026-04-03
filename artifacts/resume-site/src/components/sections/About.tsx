@@ -24,7 +24,7 @@ export function About() {
         </div>
 
         <div className="bg-card border border-border shadow-lg shadow-black/5 rounded-2xl p-6 lg:p-8">
-          <h3 className="text-xl font-bold font-display text-foreground mb-6">Core Competencies</h3>
+          <h3 className="text-xl font-bold font-display text-foreground mb-6">Основные скилы</h3>
           <div className="flex flex-wrap gap-2.5">
             {personalInfo.competencies.map((skill) => (
               <span 
