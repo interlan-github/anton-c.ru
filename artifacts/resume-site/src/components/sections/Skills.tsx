@@ -12,7 +12,7 @@ const levelToPercent = (level: string) => {
 
 export function Skills() {
   return (
-    <SectionLayout id="skills" title="Technical Skills" subtitle="Technologies and tools I work with daily." bgDark>
+    <SectionLayout id="skills" title="Хард-скилы" subtitle="Технологии и инструменты с которыми я работаю каждый день." bgDark>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
         {skillsData.map((category, idx) => (
           <div key={idx} className="bg-card rounded-2xl p-6 shadow-sm border border-border">

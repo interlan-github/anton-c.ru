@@ -4,7 +4,7 @@ import { GraduationCap } from "lucide-react";
 
 export function Education() {
   return (
-    <SectionLayout id="education" title="Education">
+    <SectionLayout id="education" title="Образование">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {educationData.map((edu) => (
           <div 
@@ -17,7 +17,7 @@ export function Education() {
             <div>
               <h3 className="text-lg font-bold text-foreground">{edu.degree}</h3>
               <p className="text-muted-foreground mt-1 font-medium">{edu.institution}</p>
-              <p className="text-sm text-primary mt-2 font-semibold">Graduated {edu.year}</p>
+              <p className="text-sm text-primary mt-2 font-semibold">Завершено: {edu.year}</p>
             </div>
           </div>
         ))}

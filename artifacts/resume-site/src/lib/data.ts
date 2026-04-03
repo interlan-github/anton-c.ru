@@ -60,21 +60,27 @@ export const experienceData = [
 export const educationData = [
   {
     id: 1,
-    degree: "Bachelor of Science in Computer Science",
-    institution: "State Technical University",
-    year: "2016"
+    degree: "Обработка металлов давлением",
+    institution: "Алтайский Государственный Технический Университет",
+    year: "2004"
+  },
+  {
+    id: 1,
+    degree: "Новые возможности Oracle 10g",
+    institution: "Центр повышения квалификации SoftLine",
+    year: "2012"
   }
 ];
 
 export const skillsData = [
-  { category: "Operating Systems", items: [{ name: "Linux RHEL/Ubuntu", level: "Advanced" }, { name: "Windows Server", level: "Intermediate" }] },
-  { category: "Cloud Platforms", items: [{ name: "AWS", level: "Advanced" }, { name: "GCP", level: "Intermediate" }, { name: "Azure", level: "Basic" }] },
-  { category: "Containers & Orchestration", items: [{ name: "Docker", level: "Advanced" }, { name: "Kubernetes", level: "Advanced" }, { name: "Helm", level: "Intermediate" }] },
+  { category: "Операционные системы", items: [{ name: "Linux RHEL/Ubuntu", level: "Advanced" }, { name: "Windows Server", level: "Intermediate" }] },
+  { category: "Облачные платформы", items: [{ name: "AWS", level: "Advanced" }, { name: "GCP", level: "Intermediate" }, { name: "Azure", level: "Basic" }] },
+  { category: "Контейнеры и оркестраторы", items: [{ name: "Docker", level: "Advanced" }, { name: "Kubernetes", level: "Advanced" }, { name: "Helm", level: "Intermediate" }] },
   { category: "CI/CD", items: [{ name: "Jenkins", level: "Advanced" }, { name: "GitLab CI", level: "Advanced" }, { name: "GitHub Actions", level: "Intermediate" }] },
   { category: "Infrastructure as Code", items: [{ name: "Terraform", level: "Advanced" }, { name: "Ansible", level: "Advanced" }, { name: "Puppet", level: "Basic" }] },
-  { category: "Monitoring & Logging", items: [{ name: "Prometheus", level: "Advanced" }, { name: "Grafana", level: "Advanced" }, { name: "ELK Stack", level: "Intermediate" }] },
-  { category: "Scripting", items: [{ name: "Bash", level: "Advanced" }, { name: "Python", level: "Advanced" }, { name: "Go", level: "Basic" }] },
-  { category: "Networking & Security", items: [{ name: "TCP/IP, DNS, VPN", level: "Advanced" }, { name: "Load Balancing", level: "Advanced" }] }
+  { category: "Мониторинг и логирование", items: [{ name: "Prometheus", level: "Advanced" }, { name: "Grafana", level: "Advanced" }, { name: "ELK Stack", level: "Intermediate" }] },
+  { category: "Разработка", items: [{ name: "Bash", level: "Advanced" }, { name: "Python", level: "Advanced" }, { name: "Go", level: "Basic" }] },
+  { category: "Сети и безопасность", items: [{ name: "TCP/IP, DNS, VPN", level: "Advanced" }, { name: "Load Balancing", level: "Advanced" }] }
 ];
 
 export const projectsData = [

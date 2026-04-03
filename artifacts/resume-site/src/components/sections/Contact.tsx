@@ -130,8 +130,8 @@ export function Contact() {
             </div>
           </div>
         </div>
-
         {/* Contact Form */}
+        {/*     
         <div className="lg:col-span-3">
           <form onSubmit={handleSubmit(onSubmit)} className="bg-card border border-border p-6 md:p-8 rounded-2xl shadow-sm space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -198,7 +198,7 @@ export function Contact() {
             </button>
           </form>
         </div>
-        
+        */}        
       </div>
     </SectionLayout>
   );
