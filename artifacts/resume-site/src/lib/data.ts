@@ -104,11 +104,11 @@ export const projectsData = [
   },
   {
     id: 3,
-    title: "Centralized Monitoring Platform",
-    role: "System Administrator",
-    technologies: "Prometheus, Grafana, AlertManager, ELK",
-    outcome: "MTTR reduced by 70%",
-    description: "Designed and deployed a centralized monitoring and logging platform providing deep observability into 500+ servers.",
+    title: "Перевод call-центра в режим удаленной работы на время самоизоляции",
+    role: "Ведущий системный администратор",
+    technologies: "Windows, Linux, CRM, VoIP",
+    outcome: "Перевод на удаленный формат работы 30-и сотрудников Call-центра",
+    description: "Обеспечение непрерывности и эффективности работы call-центра при переводе сотрудников на дистанционный формат, сохраняя качество обслуживания клиентов. Организация технической инфраструктуры для удалённого доступа к рабочим инструментам и системам;",
     link: "#"
   }
 ];
