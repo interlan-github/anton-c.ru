@@ -4,7 +4,7 @@ import { FolderGit2, ExternalLink } from "lucide-react";
 
 export function Projects() {
   return (
-    <SectionLayout id="projects" title="Featured Projects" subtitle="A selection of key infrastructure and automation initiatives.">
+    <SectionLayout id="projects" title="Реализованные проекты" subtitle="Несколько свежих реализованных проектов.">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {projectsData.map((project) => (
           <div 
