@@ -33,11 +33,11 @@ export function Footer() {
               GitHub
             </a>
             <a
-              href="#"
+              href="https://career.habr.com/interlan/print.pdf" target="_blank"
               className="px-4 py-2 rounded-lg bg-slate-800 text-white hover:bg-primary transition-colors text-sm font-semibold flex items-center gap-2"
             >
               <Download className="w-4 h-4" />
-              Resume (PDF)
+              Резюме (PDF)
             </a>
           </div>
         </div>

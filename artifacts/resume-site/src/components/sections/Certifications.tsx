@@ -4,7 +4,7 @@ import { Award, ExternalLink } from "lucide-react";
 
 export function Certifications() {
   return (
-    <SectionLayout id="certifications" title="Certifications" bgDark>
+    <SectionLayout id="certifications" title="Сертификаты" bgDark>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {certificationsData.map((cert) => (
           <div 

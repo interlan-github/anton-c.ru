@@ -116,10 +116,10 @@ export const projectsData = [
 export const certificationsData = [
   {
     id: 1,
-    name: "AWS Certified Solutions Architect – Professional",
-    issuer: "Amazon",
-    year: "2022",
-    verifyUrl: "#"
+    name: "Сертификация - Senior Linux System Administrator",
+    issuer: "Хабр-карьера",
+    year: "2025",
+    verifyUrl: "https://interlan.xyz/2026/03/31/podtverdil-svoj-uroven-na-habr-karere/"
   },
   {
     id: 2,

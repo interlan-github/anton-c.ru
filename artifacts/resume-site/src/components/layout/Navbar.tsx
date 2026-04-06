@@ -68,7 +68,7 @@ export function Navbar() {
               ))}
             </ul>
             <a
-              href="#"
+              href="https://career.habr.com/interlan" target="_blank"
               className="ml-4 px-4 py-2 text-sm font-semibold rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-white transition-all duration-200 flex items-center gap-2 shadow-sm"
             >
               <Download className="w-4 h-4" />
