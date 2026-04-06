@@ -86,11 +86,11 @@ export const skillsData = [
 export const projectsData = [
   {
     id: 1,
-    title: "Kubernetes Migration Project",
-    role: "Lead DevOps",
-    technologies: "Kubernetes, Helm, ArgoCD, AWS EKS",
-    outcome: "40% cost reduction, 99.9% uptime",
-    description: "Migrated a legacy monolithic application to a highly-available microservices architecture running on Kubernetes.",
+    title: "Внедрение решений на базе Отечественного и Открытого ПО",
+    role: "System administrator",
+    technologies: "Linux, RedOS, ZVirt, RedADM, FreeIPA, Samba, CUPS",
+    outcome: "Замещение около 60% проприетарного ПО отечественными аналогами",
+    description: "Реализация проекта для Севернефтегазпрома по импортозамещению ИТ‑инфраструктуры: переход с решений Microsoft на отечественные программные продукты (в т. ч. RedOS) с сохранением функциональности и безопасности бизнес‑процессов.",
     link: "#"
   },
   {
