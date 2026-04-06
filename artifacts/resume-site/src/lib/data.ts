@@ -87,7 +87,7 @@ export const projectsData = [
   {
     id: 1,
     title: "Внедрение решений на базе Отечественного и Открытого ПО",
-    role: "System administrator",
+    role: "Системный администратор (в единственном числе)",
     technologies: "Linux, RedOS, ZVirt, RedADM, FreeIPA, Samba, CUPS",
     outcome: "Замещение около 60% проприетарного ПО отечественными аналогами",
     description: "Реализация проекта для Севернефтегазпром по импортозамещению ИТ‑инфраструктуры: переход с решений Microsoft на отечественные программные продукты (в т. ч. RedOS) с сохранением функциональности и безопасности бизнес‑процессов.",
@@ -95,11 +95,11 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: "CI/CD Pipeline Automation",
-    role: "DevOps Engineer",
-    technologies: "GitLab CI, Docker, Terraform, ArgoCD",
-    outcome: "3x faster release cycles",
-    description: "Built an end-to-end GitOps pipeline servicing 20+ development teams with automated testing and deployment gates.",
+    title: "Перевод крупной онлайн‑системы микрокредитования частных лиц в России на микросервисную архитектуру",
+    role: "Системный инженер/Devops",
+    technologies: "GitLab CI, Docker, Kubernetes, Terraform, ArgoCD, Postgresql, RabbitMQ",
+    outcome: "Адаптация платформы для международных рынков Казахстан, Мексика, Колумбия",
+    description: "Перевёл систему с монолитной архитектуры на микросервисы (Docker, Kubernetes). Переписал CI‑процессы для сборки сервисов в Docker и Kubernetes и настроил мониторинг и логирование микросервисов (Prometheus, Grafana, Zabbix, ELK).",
     link: "#"
   },
   {

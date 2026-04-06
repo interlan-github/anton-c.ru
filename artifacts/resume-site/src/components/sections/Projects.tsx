@@ -21,7 +21,7 @@ export function Projects() {
               </h3>
               
               <p className="text-sm font-semibold text-primary mb-4">
-                Role: {project.role}
+                Роль в проекте: {project.role}
               </p>
               
               <p className="text-muted-foreground text-sm mb-6 flex-1">
@@ -30,11 +30,11 @@ export function Projects() {
               
               <div className="space-y-3 mt-auto pt-6 border-t border-border/50">
                 <div>
-                  <span className="text-xs font-semibold text-muted-foreground uppercase">Tech Stack</span>
+                  <span className="text-xs font-semibold text-muted-foreground uppercase">Стек технологий</span>
                   <p className="text-sm text-foreground font-medium mt-1">{project.technologies}</p>
                 </div>
                 <div>
-                  <span className="text-xs font-semibold text-muted-foreground uppercase">Outcome</span>
+                  <span className="text-xs font-semibold text-muted-foreground uppercase">Результат</span>
                   <p className="text-sm text-emerald-600 font-semibold mt-1">{project.outcome}</p>
                 </div>
               </div>
@@ -46,7 +46,7 @@ export function Projects() {
                 className="text-sm font-semibold text-primary hover:text-primary/80 flex items-center gap-1.5"
                 onClick={(e) => { e.preventDefault(); /* Mock link */ }}
               >
-                View Details <ExternalLink className="w-4 h-4" />
+                Подробнее <ExternalLink className="w-4 h-4" />
               </a>
             </div>
           </div>
