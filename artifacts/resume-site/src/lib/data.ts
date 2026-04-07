@@ -118,28 +118,133 @@ export const certificationsData = [
     id: 1,
     name: "Сертификация - Senior Linux System Administrator",
     issuer: "Хабр-карьера",
-    year: "2025",
+    year: "2026",
     verifyUrl: "https://interlan.xyz/2026/03/31/podtverdil-svoj-uroven-na-habr-karere/"
   },
   {
     id: 2,
-    name: "Certified Kubernetes Administrator (CKA)",
-    issuer: "CNCF",
-    year: "2021",
-    verifyUrl: "#"
+    name: "Креативное мышление и AI для решения задач",
+    issuer: "Cloud.ru",
+    year: "2026",
+    verifyUrl: "https://interlan.xyz/2026/03/30/vvedenie-v-vibecode-navajbkodim-sajt-vizitku-rezjume/#AI-CERT"
   },
   {
     id: 3,
-    name: "Red Hat Certified Engineer (RHCE)",
-    issuer: "Red Hat",
-    year: "2020",
-    verifyUrl: "#"
+    name: "Погружение в PostgreSQL",
+    issuer: "Selectel",
+    year: "2026",
+    verifyUrl: "https://interlan.xyz/2026/02/13/kurs-pogruzhenie-v-postgresql-ot-selectel/"
   },
   {
     id: 4,
-    name: "HashiCorp Certified: Terraform Associate",
-    issuer: "HashiCorp",
-    year: "2022",
-    verifyUrl: "#"
+    name: "Cloud.ru Cloud Fundamentals",
+    issuer: "Cloud.ru",
+    year: "2025",
+    verifyUrl: "https://awardme.ru/ru/badges/a9967d2b-edfe-4d65-9675-fb7ca0cdf475"
+  },
+  {
+    id: 5,
+    name: "Cloud.ru Evolution Fundamentals",
+    issuer: "Cloud.ru",
+    year: "2025",
+    verifyUrl: "https://interlan.xyz/2025/01/31/mojo-obuchenie-kursy-i-sertifikaty/#2025-1"
+  },
+  {
+    id: 6,
+    name: "Introduction to Docker : The Basics",
+    issuer: "Cloud.ru",
+    year: "2021",
+    verifyUrl: "https://coursera.org/share/ce401afe38fbb54bddcc1b1607a3e843"
+  },
+  {
+    id: 7,
+    name: "PHP Tutorial",
+    issuer: "SoloLearn",
+    year: "2019",
+    verifyUrl: "https://www.sololearn.com/Certificate/CT-EUGVFGOI/jpg"
+  },
+  {
+    id: 8,
+    name: "Java Tutorial",
+    issuer: "SoloLearn",
+    year: "2019",
+    verifyUrl: "https://www.sololearn.com/Certificate/CT-ZCWWYF0L/jpg"
+  },
+  {
+    id: 9,
+    name: "JavaScript Tutorial",
+    issuer: "SoloLearn",
+    year: "2018",
+    verifyUrl: "https://www.sololearn.com/Certificate/CT-CR9RHQ6D/jpg"
+  },
+  {
+    id: 10,
+    name: "CSS Fundamentals",
+    issuer: "SoloLearn",
+    year: "2018",
+    verifyUrl: "https://www.sololearn.com/Certificate/CT-WP4UCWPK/jpg"
+  },
+  {
+    id: 11,
+    name: "HTML Fundamentals",
+    issuer: "SoloLearn",
+    year: "2018",
+    verifyUrl: "https://www.sololearn.com/Certificate/CT-CGVFSOMX/jpg"
+  },
+  {
+    id: 12,
+    name: "Python 3 Tutorial",
+    issuer: "SoloLearn",
+    year: "2018",
+    verifyUrl: "https://www.sololearn.com/Certificate/CT-AQACSED8/jpg"
+  },
+  {
+    id: 13,
+    name: "SQL Fundamentals",
+    issuer: "SoloLearn",
+    year: "2018",
+    verifyUrl: "https://www.sololearn.com/Certificate/CT-WMYQ5DQE/jpg"
+  },
+  {
+    id: 14,
+    name: "jQuery Tutorial",
+    issuer: "SoloLearn",
+    year: "2018",
+    verifyUrl: "https://www.sololearn.com/Certificate/CT-FYIU7IB3/jpg"
+  },
+  {
+    id: 15,
+    name: "Администрирование ОС Linux",
+    issuer: "Интуит",
+    year: "2017",
+    verifyUrl: "https://intuit.ru/verifydiplomas/101096109"
+  },
+  {
+    id: 16,
+    name: "Введение в HTML и CSS",
+    issuer: "Интуит",
+    year: "2017",
+    verifyUrl: "https://intuit.ru/verifydiplomas/101102651"
+  },
+  {
+    id: 17,
+    name: "Операционная система Linux",
+    issuer: "Интуит",
+    year: "2017",
+    verifyUrl: "https://intuit.ru/verifydiplomas/101096094"
+  },
+  {
+    id: 18,
+    name: "Сетевые средства Linux",
+    issuer: "Интуит",
+    year: "2017",
+    verifyUrl: "https://intuit.ru/verifydiplomas/101096098"
+  },
+  {
+    id: 19,
+    name: "Спецификация языка HTML",
+    issuer: "Интуит",
+    year: "2017",
+    verifyUrl: "https://intuit.ru/verifydiplomas/101102648"
   }
 ];

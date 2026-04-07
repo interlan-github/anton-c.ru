@@ -54,8 +54,8 @@ export function Contact() {
   };
 
   return (
-    <SectionLayout id="contact" title="Контакты" subtitle="У вас есть вакансия или вы хотите обсудить какие-нибудь вопросы? Напишите мне.">
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
+    <SectionLayout id="contact" title="Контакты" subtitle="У вас есть вакансия или вы хотите обсудить какие-нибудь вопросы, напишите мне.">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
         
         {/* Contact Info */}
         <div className="lg:col-span-2 space-y-8">
@@ -68,7 +68,7 @@ export function Contact() {
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-1">Сейчас я в</p>
+                  <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-1">Локация</p>
                   <p className="font-medium text-foreground">{personalInfo.location}</p>
                 </div>
               </div>
