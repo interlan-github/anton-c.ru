@@ -32,7 +32,7 @@ jobs:
         env:
           HOST: ${{ secrets.HOST }} # IP-адрес сервера
           USERNAME: ${{ secrets.USERNAME }} # Имя пользователя
-          PASSWORD: ${{ secrets.PASSWORD }} # Пароль доступа к серверу
+          PASSWORD: ${{ secrets.PASSWORD }} # Пароль доступа к серверу 
           PORT: 22 # Порт подключения
         with:
           source: "./dist/" # Папка со скомпилированным приложением
