@@ -1,0 +1,39 @@
+name: Build and Deploy Vue App
+
+on:
+  push:
+    branches:
+      - main # Запускаем только при пушах в основную ветку
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # Используем виртуальную машину Ubuntu последней версии
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3 # Загружаем код из текущего коммита
+        
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22.x' # Версия NodeJS
+
+      - name: Install pnpm
+        run: npm install --global corepack@latest # Устанавливаем pnpm
+
+      - name: Install dependencies
+        run: pnpm install # Устанавливаем зависимости
+      
+      - name: Build application
+        run: export BASE_PATH="/" && export PORT=3000 && pnpm run build # Выполняем команду сборки приложения
+      
+      - name: Deploy to server via SFTP
+        uses: appleboy/scp-action@master
+        env:
+          HOST: ${{ secrets.HOST }} # IP-адрес сервера
+          USERNAME: ${{ secrets.USERNAME }} # Имя пользователя
+          PASSWORD: ${{ secrets.PASSWORD }} # Пароль доступа к серверу
+          PORT: 22 # Порт подключения
+        with:
+          source: "./dist/" # Папка со скомпилированным приложением
+          target: "/var/www/myapp/public_html" # Куда выкладывать результат на сервере
