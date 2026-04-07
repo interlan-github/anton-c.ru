@@ -40,10 +40,10 @@ jobs:
       - name: Deploy to server via SFTP
         uses: appleboy/scp-action@master
         env:
-          HOST: ${{ secrets.HOST }} # IP-адрес сервера
-          USERNAME: ${{ secrets.USERNAME }} # Имя пользователя
-          PASSWORD: ${{ secrets.PASSWORD }} # Пароль доступа к серверу 
+          HOST: ${{ secrets.PROD_HOST }} # IP-адрес сервера
+          USERNAME: ${{ secrets.PROD_USERNAME }} # Имя пользователя
+          PASSWORD: ${{ secrets.PROD_PASSWORD }} # Пароль доступа к серверу 
           PORT: 22 # Порт подключения
         with:
-          source: "./dist/" # Папка со скомпилированным приложением
-          target: "/var/www/vhosts/public_html" # Куда выкладывать результат на сервере
+          source: "./artifacts/resume-site/dist/public/" # Папка со скомпилированным приложением
+          target: "/tmp" # Куда выкладывать результат на сервере
