@@ -36,4 +36,4 @@ jobs:
           PORT: 22 # Порт подключения
         with:
           source: "./dist/" # Папка со скомпилированным приложением
-          target: "/var/www/myapp/public_html" # Куда выкладывать результат на сервере
+          target: "/var/www/vhosts/public_html" # Куда выкладывать результат на сервере
