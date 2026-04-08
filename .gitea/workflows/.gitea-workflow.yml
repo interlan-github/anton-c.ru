@@ -28,11 +28,11 @@ jobs:
           node-version: '22.x'
 
       - name: Install pnpm
-        run: npm install --g corepack@latest && npm install -g typescript && pwd && ls -la ./artifacts/resume-site/node_modules/
+        run: npm install --g corepack@latest && npm install -g typescript
 
       - name: Install dependencies
-        #if: steps.cache-npm.outputs.cache-hit != 'true'
-        run: pnpm install
+        if: steps.cache-npm.outputs.cache-hit != 'true'
+        run: pwd && ls -la ./artifacts/resume-site/node_modules/ && pnpm install
       
       - name: Build application
         run: export BASE_PATH="/" && export PORT=3000 && cd artifacts/resume-site/ && pnpm run build
