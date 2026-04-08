@@ -55,8 +55,7 @@ jobs:
           password: ${{ secrets.PROD_PASSWORD }}
           port: 22
           script: |
-            echo "Helloworld" &&
-            rsync -az --delete-after \
+            sudo rsync -az --delete-after \
               /tmp/artifacts/resume-site/dist/public/ \
               /var/www/vhosts/anton-c.ru/
             sudo chown -R www-data:www-data /var/www/vhosts/anton-c.ru/
