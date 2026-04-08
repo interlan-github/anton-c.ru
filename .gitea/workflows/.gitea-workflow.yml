@@ -17,7 +17,10 @@ jobs:
         id: cache-npm
         uses: actions/cache@v3
         with:
-          path: ./artifacts/resume-site/node_modules
+          path: |
+            ~/.npm
+            ./node_modules/
+            ./artifacts/resume-site/node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-node-
