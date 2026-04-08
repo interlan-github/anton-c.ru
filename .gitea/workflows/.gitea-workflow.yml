@@ -31,7 +31,7 @@ jobs:
         run: npm install --g corepack@latest && npm install -g typescript && pwd && ls -la ./artifacts/resume-site/node_modules/
 
       - name: Install dependencies
-        #if: steps.cache-npm.outputs.cache-hit != 'true'
+        if: steps.cache-npm.outputs.cache-hit != 'true'
         run: pnpm install
       
       - name: Build application

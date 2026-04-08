@@ -127,12 +127,12 @@ export function Contact() {
                   <Github className="w-5 h-5" />
                 </a>
                   <a 
-                  href={personalInfo.github} 
+                  href="https://www.facebook.com/anton.chernousov.54" 
                   target="_blank" 
                   rel="noreferrer"
                   className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-foreground hover:bg-primary hover:text-white transition-all hover:-translate-y-1 shadow-sm"
                 >
-                  <Github className="w-5 h-5" />
+                  <Facebook className="w-5 h-5" />
                 </a>
               </div>
             </div>
