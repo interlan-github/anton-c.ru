@@ -47,7 +47,7 @@ jobs:
           source: "./artifacts/resume-site/dist/public/"
           target: "/tmp"
 
-      - name: Rsync on remote server
+      - name: Rsync folder
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.PROD_HOST }}
