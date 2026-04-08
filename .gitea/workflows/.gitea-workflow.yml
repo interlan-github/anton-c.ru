@@ -50,12 +50,13 @@ jobs:
       - name: Rsync on remote server
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
+          host: ${{ secrets.PROD_HOST }}
+          username: ${{ secrets.PROD_USERNAME }}
+          password: ${{ secrets.PROD_PASSWORD }}
           port: 22
           script: |
-            rsync -az --delete \
+            echo "Helloworld" &&
+            rsync -az --delete-after \
               /tmp/artifacts/resume-site/dist/public/ \
               /var/www/vhosts/anton-c.ru/
             sudo chown -R www-data:www-data /var/www/vhosts/anton-c.ru/
