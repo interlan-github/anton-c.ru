@@ -37,7 +37,7 @@ jobs:
       - name: Build application
         run: export BASE_PATH="/" && export PORT=3000 && pnpm run build # Выполняем команду сборки приложения
       
-      - name: Deploy to server via SFTP
+      - name: Deploy to server via SFTP (/tmp)
         uses: appleboy/scp-action@master
         env:
           HOST: ${{ secrets.PROD_HOST }} # IP-адрес сервера
