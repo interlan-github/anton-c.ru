@@ -3,21 +3,21 @@ name: Build and Deploy Vue App
 on:
   push:
     branches:
-      - main # Запускаем только при пушах в основную ветку
+      - main
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest # Используем виртуальную машину Ubuntu последней версии
+    runs-on: ubuntu-latest
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3 # Загружаем код из текущего коммита
+        uses: actions/checkout@v3
 
       - name: Cache Node modules
         id: cache-npm
         uses: actions/cache@v3
         with:
-          path: ~/.npm # Путь к каталогу с кешированными модулями
+          path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
@@ -25,25 +25,26 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v3
         with:
-          node-version: '22.x' # Версия NodeJS
+          node-version: '22.x'
 
       - name: Install pnpm
-        run: npm install --global corepack@latest # Устанавливаем pnpm
+        run: npm install --global corepack@latest
 
       - name: Install dependencies
         if: steps.cache-npm.outputs.cache-hit != 'true'
-        run: pnpm install # Устанавливаем зависимости
+        run: pnpm install
       
       - name: Build application
-        run: export BASE_PATH="/" && export PORT=3000 && pnpm run build # Выполняем команду сборки приложения
+        run: export BASE_PATH="/" && export PORT=3000 && pnpm run build && echo "Hello world" && echo ${{ secrets.PROD_USERNAME }}
       
       - name: Deploy to server via SFTP (/tmp)
         uses: appleboy/scp-action@master
+        run: echo "Hello world" && echo ${{ secrets.PROD_USERNAME }}
         env:
-          HOST: ${{ secrets.PROD_HOST }} # IP-адрес сервера
-          USERNAME: ${{ secrets.PROD_USERNAME }} # Имя пользователя
-          PASSWORD: ${{ secrets.PROD_PASSWORD }} # Пароль доступа к серверу 
-          PORT: 22 # Порт подключения
+          HOST: ${{ secrets.PROD_HOST }}
+          USERNAME: ${{ secrets.PROD_USERNAME }}
+          PASSWORD: ${{ secrets.PROD_PASSWORD }}
+          PORT: 22
         with:
-          source: "./artifacts/resume-site/dist/public/" # Папка со скомпилированным приложением
-          target: "/tmp" # Куда выкладывать результат на сервере
+          source: "./artifacts/resume-site/dist/public/"
+          target: "/tmp"
