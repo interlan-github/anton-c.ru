@@ -31,11 +31,11 @@ jobs:
         run: npm install --g corepack@latest && npm install -g typescript && pwd && ls -la ./artifacts/resume-site/node_modules/
 
       - name: Install dependencies
-        if: steps.cache-npm.outputs.cache-hit != 'true'
+        #if: steps.cache-npm.outputs.cache-hit != 'true'
         run: pnpm install
       
       - name: Build application
-        run: export BASE_PATH="/" && export PORT=3000 && pnpm run build
+        run: export BASE_PATH="/" && export PORT=3000 && cd artifacts/resume-site/ && pnpm run build
       
       - name: Deploy to server via SFTP (/tmp)
         uses: appleboy/scp-action@master
