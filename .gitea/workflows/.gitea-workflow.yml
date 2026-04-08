@@ -28,7 +28,7 @@ jobs:
           node-version: '22.x'
 
       - name: Install pnpm
-        run: npm install --global corepack@latest
+        run: npm install --g corepack@latest && npm install -g typescript
 
       - name: Install dependencies
         if: steps.cache-npm.outputs.cache-hit != 'true'
