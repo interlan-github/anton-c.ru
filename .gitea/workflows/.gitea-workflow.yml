@@ -44,12 +44,5 @@ jobs:
           username: ${{ secrets.PROD_USERNAME }}
           password: ${{ secrets.PROD_PASSWORD }}
           port: 22
-          # source: "./artifacts/resume-site/dist/public/"
-          # target: "/tmp"
-          script: |
-            cd /tmp
-            rm -rf vue-app-build
-            mkdir vue-app-build && cd vue-app-build
-            tar xzf <(curl --silent ${{ github.server_url }}/${{ github.repository }}/actions/artifacts/${{ github.run_id }}.tar.gz) # Скачиваем архив с результатом сборки из Artifacts
-            rsync -avz --delete ./dist/ /var/www/myapp/public_html
-            sudo chown -R www-data:www-data /var/www/myapp/public_html
+          source: "./artifacts/resume-site/dist/public/"
+          target: "/tmp"
