@@ -46,3 +46,12 @@ jobs:
           port: 22
           source: "./artifacts/resume-site/dist/public/"
           target: "/tmp"
+
+      - name: Deploy to server via SFTP (/tmp)
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.PROD_HOST }}
+          username: ${{ secrets.PROD_USERNAME }}
+          password: ${{ secrets.PROD_PASSWORD }}
+          port: 22
+          script: rsync --help
