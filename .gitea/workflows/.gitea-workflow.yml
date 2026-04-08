@@ -46,3 +46,16 @@ jobs:
           port: 22
           source: "./artifacts/resume-site/dist/public/"
           target: "/tmp"
+
+      - name: Rsync on remote server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: 22
+          script: |
+            rsync -az --delete \
+              /tmp/artifacts/resume-site/dist/public/ \
+              /var/www/vhosts/anton-c.ru/
+            sudo chown -R www-data:www-data /var/www/vhosts/anton-c.ru/
