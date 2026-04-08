@@ -39,7 +39,6 @@ jobs:
       
       - name: Deploy to server via SFTP (/tmp)
         uses: appleboy/scp-action@master
-        run: echo "Hello world" && echo ${{ secrets.PROD_USERNAME }}
         env:
           HOST: ${{ secrets.PROD_HOST }}
           USERNAME: ${{ secrets.PROD_USERNAME }}
