@@ -35,7 +35,7 @@ jobs:
 
       - name: Install dependencies
         if: steps.cache-npm.outputs.cache-hit != 'true'
-        run: pwd && ls -la ./artifacts/resume-site/node_modules/ && ls -la ./node_modules/ && pnpm install
+        run: pnpm install
       
       - name: Build application
         run: export BASE_PATH="/" && export PORT=3000 && cd artifacts/resume-site/ && pnpm run build
