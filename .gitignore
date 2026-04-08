@@ -9,7 +9,11 @@ out-tsc
 .expo-shared
 
 # dependencies
-node_modules
+# !node_modules/cache.txt
+# node_modules/
+
+**/node_modules/*
+!**/node_modules/cache
 
 # IDEs and editors
 /.idea
@@ -27,7 +31,6 @@ node_modules
 !.vscode/launch.json
 !.vscode/extensions.json
 
-!artifacts/resume-site/node_modules/cache.txt
 # misc
 /.sass-cache
 /connect.lock
