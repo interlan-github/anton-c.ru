@@ -44,7 +44,7 @@ export function Footer() {
         
         <div className="mt-12 pt-8 border-t border-slate-800 text-center text-sm text-slate-500 flex flex-col md:flex-row justify-between items-center">
           <p>&copy; {currentYear} {personalInfo.name}. All rights reserved.</p>
-          <p className="mt-2 md:mt-0">Built with React & Tailwind CSS</p>
+          <p className="mt-2 md:mt-0"><a href="https://github.com/interlan-github/anton-c.ru" target="_blank">Built with React & Tailwind CSS</a></p>
         </div>
       </div>
     </footer>
