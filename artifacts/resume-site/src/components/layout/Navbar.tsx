@@ -66,6 +66,14 @@ export function Navbar() {
                   </a>
                 </li>
               ))}
+                <li>
+                  <a
+                    href="https://interlan.xyz" target="_blank"
+                    className="text-sm font-medium transition-colors hover:text-primary text-muted-foreground"
+                  >
+                    Блог
+                  </a>
+                </li>
             </ul>
             <a
               href="https://career.habr.com/interlan" target="_blank"
